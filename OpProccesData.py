@@ -83,7 +83,7 @@ st.markdown(
     
 # specify the primary menu definition
 menu_data = [
-    {'id': "AllMetrics", 'label':"AllMetrics"},
+    {'id': "EventingData", 'label':"Eventing Data"},
     {'id': "ActionsData", 'label':"Extract ActionsData"},
     {'id': "PassesData", 'label':"Extract PassesData"},
     {'id': "ProMatchStats", 'label':"ProMatchStats"},
@@ -103,7 +103,7 @@ menu_id = hc.nav_bar(
 ############################################################################################################################################################################################################################
 ############################################################################################################################################################################################################################
 
-if menu_id == "AllMetrics":
+if menu_id == "EventingData":
     with st.sidebar:
         with open("Resources/win.png", "rb") as f:
             data = base64.b64encode(f.read()).decode("utf-8")
