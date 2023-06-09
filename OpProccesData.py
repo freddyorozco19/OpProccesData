@@ -120,26 +120,22 @@ if menu_id == "EventingData":
         st.markdown("""---""")    
         
         with st.form(key='form'):
-            
-            #Table = st.file_uploader("Choose a excel file", type = ['xlsx'], accept_multiple_files=False)
-            
-            Table = st.file_uploader("Cargar archivo:", type="xlsx")
+            plt = st.text_area('Paste your Source Code')
 
-
-            Filename = st.text_input("Nombre del Archivo:",
+            TableName = st.text_input("Ingrese Nombre del Archivo",
                                       key="filename"
                                       )   
 
-            Matchday = st.text_input("Jornadas Disputadas:",
-                                    key="matchday"
+            MatchID = st.text_input("Ingrese MatchID:",
+                                    key="matchid"
                                     )   
 
-            Competition = st.text_input("Competición:",
-                                     key="competition"
+            Matchday = st.text_input("Ingrese Matchday:",
+                                     key="matchday"
                                      )   
 
-            Date = st.text_input("Fecha de Registro:",
-                                          key="date"
+            CompetitionID = st.text_input("Ingrese CompetitionID:",
+                                          key="competitionid"
                                           )   
             
             submit_button = st.form_submit_button(label='Aceptar')  
