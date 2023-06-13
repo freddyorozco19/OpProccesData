@@ -270,7 +270,7 @@ if menu_id == "EventingData":
 
     but0, but1 = st.columns(2)
     with but0:
-        name = Filename
+        name = TableName
         df_xlsx = to_excel(df)
         st.download_button(label='Descargar Archivo Excel',
                            data=df_xlsx,
