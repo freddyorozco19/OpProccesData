@@ -84,8 +84,7 @@ st.markdown(
 # specify the primary menu definition
 menu_data = [
     {'id': "EventingData", 'label':"Eventing Data"},
-    {'id': "ActionsData", 'label':"Extract ActionsData"},
-    {'id': "PassesData", 'label':"Extract PassesData"},
+    {'id': "JoinData", 'label':"Join Data"},
     {'id': "ProMatchStats", 'label':"ProMatchStats"},
     {'id': "Dashboard", 'icon': "fas fa-tachometer-alt", 'label':"Dashboard",'ttip':"I'm the Dashboard tooltip!"} #can add a tooltip message]
 ]
